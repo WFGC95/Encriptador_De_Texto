@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');
+
+@font-face {
+    font-family: 'Inter Thin';
+    src: url('/path/to/fonts/Inter-Thin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    background:#d0efef;
+    font-family: "Baskervville SC", serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 80%;
+}
+
+.logo{
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 6%;
+}
+
+main{
+    display: flex;
+    margin-bottom: 40px;
+    margin-left: 160px;
+    text-align: center;
+
+}
+
+.Text_area {
+    border: none;
+    color:#0A3871;
+    margin-top: 10px;
+    justify-content: center;
+    text-transform: lowercase;
+    text-align: center;
+}
+
+::placeholder {color: #0A3871; }
+    .Text_area:focus {
+        outline: none;
+        text-align: center;
+        justify-content: center;
+        height: 10%;
+        text-align: center;
+        vertical-align: middle;
+        align-items: center;
+}
+
+.Mensaje_Encriptado {
+        display: flex;
+        border: none;
+        background:#b6d1db;
+        background-position: 38px 23px;
+        background-size: contain;
+        background-image: url("./Imagen/Muñeco.png");
+        position: relative;
+        background-repeat: no-repeat;
+        overflow: auto; /* Asegura que el contenido no se desborde */
+        background-size: contain; /* Ajusta el tamaño de la imagen al cuadro */
+        border-radius: 30px;
+        box-sizing: border-box; /* Asegura que el padding no cambie el tamaño total */
+        height: 350px;
+        width: 80px 90px;
+        color: #332815d8;
+        margin-left: 0;  /* Asegura que el padding no cambie el tamaño total */
+        padding-top: 14px; /* Añade espacio en la parte superior para las letras del placeholder */
+        position: static;
+        text-transform: capitalize;
+        vertical-align: top; /* Alinea el texto en la parte superior */
+        text-align: center;
+        font-weight: right;
+        font-size: 20px; /* Tamaño de la fuente del texto dentro del textarea */
+
+}
+
+::placeholder {color: #0A3871; }
+        .Text_area:focus {
+            outline: none;
+        left: 10px; /* Ajusta la distancia desde el borde izquierdo */
+        right: 10px; /* Ajusta la distancia desde el borde derecho */
+        text-align: center;
+        justify-content: center;
+        height:77%;
+        box-sizing: border-box; /* Asegura que padding no cambie las dimensiones totales */
+        vertical-align: middle;
+}
+
+.Mensaje_Encriptado:focus {
+            outline: none;
+}
+
+.botones{
+    display: flex;
+    justify-content: left;
+    background-color: #85cccc; /* Color de fondo azul */
+    color: #5a6975; /* Color del texto*/
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 10px 10px; /* Espaciado interno */
+    margin-top: 10px;
+    border-radius: 30px;
+    justify-content: space-around; /* Distribuye espacio de manera uniforme entre los botones */
+    align-items: center; /* Centra los botones verticalmente */
+    font-size: 10px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    margin: 20px auto; /* Margen superior e inferior y centrado horizontal */
+    width: 450px; /* Ancho de la barra */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Transición para suavizar cambios */
+    box-shadow: 0 4px 6px rgba(128, 59, 184, 0.685); /* Sombra sutil */
+}
+
+/* Efecto al pasar el ratón por encima */
+.botones:hover {
+    background-color: #2980b9; /* Color de fondo más oscuro */
+    transform: scale(1.07); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 6px 8px rgba(26, 189, 211, 0.719); /* Sombra un poco más intensa */
+}
+
+/* Estilo para el botón .btn_Encriptador */
+.btn_Encriptador {
+    background-color: #3b5998; /* Color de fondo azul oscuro */
+    color: #e7e6e6; /* Color del texto claro */
+    border: 1px solid #1c1c1c; /* Borde oscuro y delgado */
+    border-radius: 25px; /* Bordes redondeados para que coincidan con el estilo de la barra */
+    padding: 10px 20px; /* Espaciado interno para agrandar el botón */
+    font-size: 16px; /* Tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+    text-align: center; /* Centra el texto dentro del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra para dar efecto de elevación */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+}
+
+/* Efecto hover para cambiar el color y la sombra al pasar el ratón */
+.btn_Encriptador:hover {
+    background-color: #2c4371; /* Color más oscuro al pasar el ratón */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5); /* Sombra más intensa */
+}
+
+/* Efecto active para cuando se hace clic */
+.btn_Encriptador:active {
+    background-color: #1f2f51; /* Aún más oscuro al hacer clic */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Sombra reducida */
+    transform: scale(0.98); /* Pequeña reducción de tamaño */
+}
+
+.btn_Desencriptar {
+    background-color: #3b5998; /* Color de fondo azul oscuro */
+    color: #e7e6e6; /* Color del texto claro */
+    border: 1px solid #1c1c1c; /* Borde oscuro y delgado */
+    border-radius: 25px; /* Bordes redondeados para que coincidan con el estilo de la barra */
+    padding: 10px 20px; /* Espaciado interno para agrandar el botón */
+    font-size: 16px; /* Tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+    text-align: center; /* Centra el texto dentro del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra para dar efecto de elevación */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+}
+
+/* Efecto hover para cambiar el color y la sombra al pasar el ratón */
+.btn_Desencriptar:hover {
+    background-color: #2c4371; /* Color más oscuro al pasar el ratón */
+    box-shadow: 0 10px 8px rgba(145, 141, 141, 0.5); /* Sombra más intensa */
+}
+
+/* Efecto active para cuando se hace clic */
+.btn_Desencriptar:active {
+    background-color: #7c9ce7; /* Aún más oscuro al hacer clic */
+    box-shadow: 0 6px 4px rgba(0, 0, 0, 0.5); /* Sombra reducida */
+    transform: scale(0.98); /* Pequeña reducción de tamaño */
+}
+
+.información {
+    color: #665b47;
+    font-size: 0.4rem;
+    font-family:'Courier New', Courier, monospace
+}
+
+.btn_copiar {
+    background-color: #3b5998; /* Color de fondo azul oscuro */
+    color: #e7e6e6; /* Color del texto claro */
+    border: 1px solid #1c1c1c; /* Borde oscuro y delgado */
+    border-radius: 25px; /* Bordes redondeados para que coincidan con el estilo de la barra */
+    padding: 10px 20px; /* Espaciado interno para agrandar el botón */
+    font-size: 16px; /* Tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+    text-align: center; /* Centra el texto dentro del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    box-shadow: 0 09px rgba(0, 0, 0, 0.3); /* Sombra para dar efecto de elevación */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+    max-width: 400px; /* Limita el ancho máximo a 400px */
+    margin: auto; /* Margen superior e inferior y centrado horizontal */
+    text-justify: distribute;
+}
+
+/* Efecto hover para cambiar el color y la sombra al pasar el ratón */
+.btn_copiar:hover {
+    background-color: #2c4371; /* Color más oscuro al pasar el ratón */
+    box-shadow: 0 6px 8px rgba(145, 141, 141, 0.5); /* Sombra más intensa */
+}
+
+/* Efecto active para cuando se hace clic */
+.btn_copiar:active {
+    background-color: #7c9ce7; /* Aún más oscuro al hacer clic */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Sombra reducida */
+    transform: scale(0.98); /* Pequeña reducción de tamaño */
+}
+
+.ml-100 {
+    margin-left: 100px;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Encriptador Alura Latam</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="./Imagen/logo a.jpg" alt="Logo De Alura+Latam">
+    </header>
+    <main>
+        <section>
+            <textarea class="Text_area" Cols="40" Rows="10" placeholder="Ingrese Aquí El Texto Que Desea Encriptar"></Textarea>
+            <div>
+                <h6 class="información">Sólo Contenido En letras Minúsculas y Sin Acentos</h6>
+            </div>
+            <div class="botones">
+                <button class="btn_Encriptador" onclick="btnEncriptador()">EnCrIpTaR</button>
+                <button class="btn_Desencriptar" onclick="btnDesencriptar()">dEsEnCrIpTaR</button>
+            </div>
+        </section>
+        <section class="ml-100">
+            <textarea class="Mensaje_Encriptado" Cols="40" Rows="1000" placeholder="Copiar De Aquí El Texto Que Encriptó"></Textarea>
+            <div class="botones">
+                <button class="btn_copiar" onclick="copiarTexto()">cOpIaR Texto eNcRiPtAdO</button>
+            </div>
+        </section>
+    </main>
+    <script src="./Script.js"></script>
+</body>
+</html>
